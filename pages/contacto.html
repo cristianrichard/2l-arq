@@ -24,6 +24,14 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,700&display=swap"
       rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,400&family=Roboto+Mono:wght@200;400&display=swap"
+      rel="stylesheet">
+   <script src="https://kit.fontawesome.com/54fffe91aa.js" crossorigin="anonymous"></script>
+   <link rel="icon" type="image/x-icon" href="/favicon/logo.jpeg">
+
 
 
 </head>
@@ -32,7 +40,7 @@
 
    <!-- NAVBAR -->
 
-   <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top mb-5 ">
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
          <a href="../index.html" class="navbar-brand d-flex justify-content-center align-items-center">
             <img src="../images/logo.jpeg" class="rounded-circle navbar-logo">
@@ -64,14 +72,39 @@
 
    <!-- INDEX -->
    <main class="contact-main">
-      <div class="d-flex justify-content-center align-items-center">
-         <h5 class="justify-content-center align-items-center">helloasfasfsafsafs</h5>
+      <div class="contact-container">
+         <div class="contact-card-container">
+            <div class="contact-card">
+               <div class="contact__card-logo">
+                  <img src="../images/logo.jpeg" alt="logo">
+               </div>
+               <div class="contact__card-header">
+                  <h1>Contact Us</h1>
+                  <p>Completa el formulario con tu consulta</p>
+               </div>
+               <form class="contact__card-form">
+                  <div class="form-item">
+                     <i class="form-item-icon fas fa-user"></i>
+                     <input type="text" placeholder="Nombre y apellido" required autofocus>
+                  </div>
+                  <div class="form-item">
+                     <i class="form-item-icon fas fa-envelope"></i>
+                     <input type="email" placeholder="Ingresa tu email" required>
+                  </div>
+                  <div class="form-item">
+                     <i class="form-item-icon fas fa-message"></i>
+                     <input type="text" placeholder="Ingresa tu consulta" required>
+                  </div>
+                  <button class="form-btn" type="submit">Enviar</button>
+               </form>
+            </div>
+         </div>
       </div>
    </main>
 
    <!-- FOOTER -->
 
-   <footer class="bg-dark text-white text-start">
+   <footer class="bg-dark text-white text-start contact-footer">
       <div class="container">
          <a href="#" class="text-decoration-none">
             <p class="footer-copyright text-white">Copyright &copy; 2023 Lorem, ipsum.</p>
