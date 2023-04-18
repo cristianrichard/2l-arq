@@ -1,37 +1,101 @@
 @charset "UTF-8";
-/* ======================= GENERAL CSS ====================================== */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: initial;
+}
+
+/* fix the feature of 'hidden' attribute.
+  display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+  - fix for the content editable attribute will work properly.
+  - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+}
+
+/* BASE CSS */
 body {
   background-color: #e9e9e9;
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.portada-index {
-  max-height: 80vh;
-}
-
-.navbar-logo {
-  width: 50px;
-  height: 50px;
-}
-
-.nav-item > a {
-  color: #fff;
-  font-weight: 400;
-}
-
-.nav-item > a:hover {
-  background-color: #fff;
-  color: rgb(33, 37, 41);
-  transition: 1s;
-}
-
-.brand-text:hover {
-  background-color: #fff;
-  color: rgb(33, 37, 41);
-  transition: 1s;
 }
 
 footer {
@@ -76,36 +140,37 @@ footer {
   text-align: justify;
 }
 
-/* ========== ICONOS DE INSTAGRAM Y LINKEDIN QUE APARECEN EN TODAS LAS PÁGINAS ========== */
-.footer-sociales {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  right: 0;
-  bottom: 48px;
+/* RESPONSIE MEDIA */
+@media (min-width: 992px) {
+  .border-top {
+    border-top: none !important;
+  }
+  .proyect-img-figcaption {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    left: 50%;
+  }
+  .proyect-img-title,
+  .proyect-img-description {
+    width: auto;
+    justify-content: start;
+    align-items: start;
+  }
 }
-
 /* ======================== SERVICIOS HTML ==============================*/
 .main-services {
   margin-top: 120px;
 }
 
-/* ======================== SOBRE NOSOTROS HTML ==============================*/
-.main-about-us {
-  margin-top: 120px;
+.portada-index {
+  max-height: 80vh;
 }
 
 /* ======================== CONTACTO HTML ==============================*/
 .contact-main {
   min-height: 95.9vh;
-}
-
-.contact-footer {
-  margin: 0;
-}
-
-.contact-main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -114,43 +179,15 @@ footer {
 
 .contact-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
-}
-
-.contact-card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-card-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-figure {
-  position: absolute;
-  right: 1rem;
-  bottom: 11rem;
-}
-
-figure > iframe {
-  border: 0;
   border-radius: 16px;
-  position: relative;
-  right: 1rem;
-  width: 450px;
-  height: 400px;
 }
 
 .contact-card {
   width: 680px;
   height: 740px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: rgba(255, 255, 255, 0.5);
   color: #373737;
   padding: 3rem;
@@ -255,7 +292,7 @@ figure > iframe {
   background: #373737;
   color: #fff;
   padding: 1rem;
-  border-radius: 100px;
+  border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: background 0.5s;
@@ -268,35 +305,47 @@ figure > iframe {
   transition: 0.5s;
 }
 
-/* ======================== RESPONSIVE MEDIA QUERIES ==================================== */
+/* ======================== SOBRE NOSOTROS HTML ==============================*/
+.main-about-us {
+  margin-top: 120px;
+}
+
+/*=============NAVBAR=============*/
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-item > a {
+  color: #fff;
+  font-weight: 400;
+}
+
+.nav-item > a:hover {
+  background-color: #fff;
+  color: rgb(33, 37, 41);
+  transition: 1s;
+}
+
+.brand-text:hover {
+  background-color: #fff;
+  color: rgb(33, 37, 41);
+  transition: 1s;
+}
+
+/* RESPONSIVE MEDIA */
+@media (max-width: 992px) {
+  .navbar-ul {
+    margin-top: 18px;
+  }
+}
+/* ===== CARD RESPONSIVE MEDIA ==========*/
 @media (min-width: 992px) {
-  .border-top {
-    border-top: none !important;
-  }
-  .proyect-img-figcaption {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    position: relative;
-    left: 50%;
-  }
-  .proyect-img-title,
-  .proyect-img-description {
-    width: auto;
-    justify-content: start;
-    align-items: start;
-  }
   .contact-card-container {
     margin-bottom: 25px;
   }
 }
 @media (max-width: 992px) {
-  .navbar-ul {
-    margin-top: 18px;
-  }
-  .footer-sociales {
-    display: none;
-  }
   .contact-card-container {
     padding: 2rem 0;
   }
@@ -319,6 +368,22 @@ figure > iframe {
   }
   .contact-card {
     margin-top: auto;
+  }
+}
+/* ========== ICONOS DE INSTAGRAM Y LINKEDIN QUE APARECEN EN TODAS LAS PÁGINAS ========== */
+.footer-sociales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  bottom: 48px;
+}
+
+/* RESPONSIVE MEDIA */
+@media (max-width: 992px) {
+  .footer-sociales {
+    display: none;
   }
 }
 

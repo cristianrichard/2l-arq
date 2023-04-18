@@ -1,0 +1,53 @@
+/* =============== PROYECTOS HTML  =============================*/
+
+.proyect-section:first-child {
+   margin-top: 110px;
+}
+
+.list-group {
+   border-bottom: 1px solid black;
+   border-bottom: none !important;
+}
+
+.list-group-item {
+   background-color: transparent;
+}
+
+.list-group-item-description {
+   font-size: 14px;
+   font-weight: lighter;
+   padding-top: 7px;
+}
+
+.proyect-img-title {
+   font-size: 16px;
+}
+
+.proyect-img-description {
+   font-size: 14px;
+   margin: 0;
+   text-align: justify;
+}
+
+/* RESPONSIE MEDIA */
+
+@media (min-width: 992px) {
+   .border-top {
+      border-top: none !important;
+   }
+
+   .proyect-img-figcaption {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      position: relative;
+      left: 50%;
+   }
+
+   .proyect-img-title,
+   .proyect-img-description {
+      width: auto;
+      justify-content: start;
+      align-items: start;
+   }
+}

@@ -1,0 +1,31 @@
+/*=============NAVBAR=============*/
+
+.navbar-logo {
+   width: 50px;
+   height: 50px;
+}
+
+.nav-item>a {
+   color: #fff;
+   font-weight: 400;
+}
+
+.nav-item>a:hover {
+   background-color: #fff;
+   color: rgba(33, 37, 41, 1);
+   transition: 1s;
+}
+
+.brand-text:hover {
+   background-color: #fff;
+   color: rgba(33, 37, 41, 1);
+   transition: 1s;
+}
+
+/* RESPONSIVE MEDIA */
+
+@media (max-width: 992px){
+   .navbar-ul {
+      margin-top: 18px;
+   }
+}

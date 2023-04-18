@@ -1,0 +1,17 @@
+/* ========== ICONOS DE INSTAGRAM Y LINKEDIN QUE APARECEN EN TODAS LAS PÁGINAS ========== */
+.footer-sociales {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: fixed;
+   right: 0;
+   bottom: 48px;
+}
+
+/* RESPONSIVE MEDIA */
+
+@media (max-width: 992px) {
+   .footer-sociales {
+      display: none;
+   }
+}

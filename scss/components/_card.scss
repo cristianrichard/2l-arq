@@ -1,0 +1,38 @@
+/* ===== CARD RESPONSIVE MEDIA ==========*/
+
+@media (min-width: 992px) {
+   .contact-card-container {
+      margin-bottom: 25px;
+   }
+}
+
+@media (max-width: 992px) {
+   .contact-card-container {
+      padding: 2rem 0;
+   }
+
+   .contact-card {
+      width: 540px;
+      padding: 2rem;
+   }
+}
+
+@media (max-width: 768px) {
+   .contact-card-container {
+      padding: 4rem 0;
+   }
+
+   .contact-card {
+      width: 420px;
+      height: 700px;
+      padding: 2rem;
+   }
+
+   .contact__card-form button {
+      margin-top: 20px;
+   }
+
+   .contact-card {
+      margin-top: auto;
+   }
+}
