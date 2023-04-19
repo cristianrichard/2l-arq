@@ -8,130 +8,106 @@
    align-items: center;
 }
 
-.contact-container {
-   display: flex;
-   border-radius: 16px;
-}
+// FORMULARIO //
 
 .contact-card {
    width: 680px;
    height: 740px;
+   display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
    background: rgba(255, 255, 255, .5);
    color: #373737;
    padding: 3rem;
    border-radius: 16px;
-}
-
-.contact__card-logo {
-   margin-bottom: 2rem;
-}
-
-.contact__card-logo img {
-   width: 75px;
-   border-radius: 50%;
-   opacity: .8;
-}
-
-.contact__card-logo,
-.contact__card-header,
-.contact__card-form {
    text-align: center;
-}
 
-.contact__card-header {
-   margin-bottom: 1.5rem;
-   border-bottom: 2px groove #373737;
-}
+   &-logo {
+      margin-bottom: 2rem;
+      text-align: center;
 
-.contact__card-header h1 {
-   font-weight: bold;
-   margin-bottom: .5rem;
-   font-size: 3rem;
-   opacity: .8;
-}
+      img {
+         width: 75px;
+         border-radius: 50%;
+         opacity: .8;
+      }
+   }
 
-.contact__card-header>h1+p {
-   font-weight: bold;
-   margin-bottom: .5rem;
-   font-size: 1.5rem;
-   opacity: .8;
-}
+   &-header {
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #373737;
 
-.contact__card-form {
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
-   margin-top: 50px;
-}
+      h1 {
+         font-weight: bold;
+         margin-bottom: .5rem;
+         font-size: 3rem;
+         opacity: .8;
+      }
 
-.contact__card-form .form-item {
-   position: relative;
-}
+      p {
+         font-weight: bold;
+         margin-bottom: .5rem;
+         font-size: 1.5rem;
+         opacity: .8;
+      }
+   }
 
-.contact__card-form .form-item .form-item-icon {
-   position: absolute;
-   top: 1.30rem;
-   left: 1.4rem;
-   font-size: 1.3rem;
-   opacity: .8;
-}
+   &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 50px;
 
-.contact__card-form .form-item>input {
-   position: absolute;
-   top: 0rem;
-   left: 0rem;
-   font-size: 1rem;
-   opacity: .8;
-}
+      .form-item {
+         position: relative;
 
-.contact__card-form input[type="text"],
-.contact__card-form input[type="email"],
-.contact__card-form input[type="text"] {
-   position: inherit;
-   background: rgba(22, 219, 245, 0.19);
-   color: #373737;
-   padding: 1rem 1.5rem;
-   border-radius: 100px;
-   width: 100%;
-   transition: background .5s;
-}
+         &-icon {
+            position: absolute;
+            top: 1.30rem;
+            left: 1.4rem;
+            font-size: 1.3rem;
+            opacity: .8;
+         }
 
-.contact__card-form input[type="text"]:hover,
-.contact__card-form input[type="email"]:hover,
-.contact__card-form input[type="text"]:hover {
-   background-color: rgba(255, 255, 255, .5);
-}
+         &>input {
+            position: inherit;
+            background: rgba(22, 219, 245, 0.19);
+            color: #373737;
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            width: 100%;
+            transition: background .5s;
+            font-size: 1rem;
+            opacity: .8;
 
-.contact__card-form input[type="text"] ::placeholder,
-.contact__card-form input[type="email"]::placeholder,
-.contact__card-form input[type="text"]::placeholder {
-   position: relative;
-   left: 40px;
-   letter-spacing: 1px;
-   transition: .5s;
-}
+            &:hover {
+               background-color: rgba(255, 255, 255, 0.5);
+            }
 
-.contact__card-form input[type="text"]::placeholder{
-   display: none;
-}
+            &::placeholder {
+               position: relative;
+               left: 40px;
+               letter-spacing: 1px;
+               transition: .5s;
+            }
+         }
+      }
 
-.contact__card-form button {
-   margin-top: 75px;
-   background: #373737;
-   color: #fff;
-   padding: 1rem;
-   border-radius: 50px;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   transition: background .5s;
-}
+      & button {
+         margin-top: 40px;
+         background: #373737;
+         color: #fff;
+         padding: 1rem;
+         border-radius: 16px;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         transition: background .5s;
 
-.contact__card-form button:hover {
-   background-color: rgba(0, 0, 0, .6);
-   cursor: pointer;
-   scale: .95;
-   transition: .5s;
+         &:hover {
+            background-color: rgba(0, 0, 0, .6);
+            cursor: pointer;
+            scale: .95;
+            transition: .5s;
+         }
+      }
+   }
 }
