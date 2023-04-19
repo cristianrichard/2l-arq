@@ -7,32 +7,38 @@
 }
 
 @media (max-width: 992px) {
-   .contact-card-container {
-      padding: 2rem 0;
-   }
 
    .contact-card {
       width: 540px;
       padding: 2rem;
+
+      &-container {
+         padding: 2rem 0;
+      }
    }
 }
 
 @media (max-width: 768px) {
-   .contact-card-container {
-      padding: 4rem 0;
-   }
 
    .contact-card {
-      width: 420px;
-      height: 700px;
-      padding: 2rem;
-   }
+      width: 380px;
+      height: 680px;
+      padding: 1.5rem;
 
-   .contact__card-form button {
-      margin-top: 20px;
-   }
+      &-container {
+         padding: 4rem 0;
+      }
 
-   .contact-card {
-      margin-top: auto;
+      &-logo {
+         margin-bottom: 24px;
+      }
+
+      &-form {
+         margin-top: 20px;
+
+         button {
+            margin-top: 20px;
+         }
+      }
    }
 }
