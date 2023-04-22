@@ -168,7 +168,6 @@ footer {
   max-height: 80vh;
 }
 
-/* ======================== CONTACTO HTML ==============================*/
 .contact-main {
   min-height: 95.9vh;
   display: flex;
@@ -281,7 +280,6 @@ footer {
   color: #fff;
   font-weight: 400;
 }
-
 .nav-item > a:hover {
   background-color: #fff;
   color: rgb(33, 37, 41);

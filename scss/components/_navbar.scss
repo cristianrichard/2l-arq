@@ -8,12 +8,12 @@
 .nav-item>a {
    color: #fff;
    font-weight: 400;
-}
 
-.nav-item>a:hover {
-   background-color: #fff;
-   color: rgba(33, 37, 41, 1);
-   transition: 1s;
+   &:hover {
+      background-color: #fff;
+      color: rgba(33, 37, 41, 1);
+      transition: 1s;
+   }
 }
 
 .brand-text:hover {
