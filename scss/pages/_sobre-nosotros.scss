@@ -1,4 +1,55 @@
 /* ======================== SOBRE NOSOTROS HTML ==============================*/
-.main-about-us {
-   margin-top: 120px;
+.profile-card {
+   height: 500px;
+
+   &-img1 {
+      img {
+         height: 200px;
+         border-top-left-radius: 16px;
+         border-top-right-radius: 16px;
+      }
+   }
+
+   &-img2 {
+      img {
+         position: relative;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         z-index: 1;
+         width: 140px;
+         height: 140px;
+         border-radius: 50%;
+         border: 7px solid #fff;
+         margin-top: -80px;
+      }
+   }
+
+   &-title {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 7px;
+         margin-top: 5px;
+      }
+   }
+
+   &-socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+   }
+
+   &:first-child {
+      margin-bottom: 80px;
+   }
+
+   &:last-child {
+      margin-bottom: 80px;
+   }
 }

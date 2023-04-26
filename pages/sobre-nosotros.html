@@ -5,18 +5,24 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Somos un grupo de arquitectos con mas de 10 años de trayectoria en la industria.">
+   <meta name="robots" content="index, follow">
+   <meta property="og:title" content="2L - ARQ - Arquitectura y Diseño">
+   <meta property="og:description"
+      content="Somos un estudio de arquitectura y diseño ubicado en la ciudad de Roldán, provincia de Santa Fe">
+   <meta property="og:type" content="website">
 
-   <title>2L - ARQ</title>
+   <title>2L - ARQ | Sobre Nosotros</title>
 
    <link rel="shortcut icon" href="../favicon/logo.jpeg" type="image/x-icon" class="favicon-img">
 
    <!-- BOOTSTRAP & CSS -->
-
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-   <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/style.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
    <!-- FONTS -->
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,30 +70,34 @@
    </header>
 
    <main>
-      <div class="container">
+      <div class="container about-us-title">
          <div class="row">
-            <div class="col-lg-6">
-               <div class="card-profile">
-                  <div class="img1"><img src="#" alt="#"></div>
-                  <div class="img2"><img src="#" alt="#"></div>
-                  <div class="title-profile">
-                     <h2>Lorem, ipsum.</h2>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, adipisci.</p>
+            <h1 class="mb-5" data-aos="fade-right" data-aos-duration="2000">QUIENES SOMOS</h1>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row g-5 p-2">
+               <div class="profile-card col-lg-6">
+                  <div class="profile-card-img1"><img class="img-fluid w-100" src="../images/sobre-nosotros/profile-card-img-bg.jpg" alt="imágen background arquitecto1"></div>
+                  <div class="profile-card-img2"><img src="../images/sobre-nosotros/profile-card-img1.webp" alt="imágen portada arquitecto1"></div>
+                  <div class="profile-card-title">
+                     <h2>Lucia, Ledesma</h2>
+                     <p class="text-center">Arquitecta graduada de la Universidad Nacional de Rosario.</p>
                   </div>
-                  <div class="profile-socials">
+                  <div class="profile-card-socials">
                      <i class="bi bi-linkedin"></i>
                      <i class="bi bi-instagram"></i>
                      <i class="bi bi-facebook"></i>
                   </div>
                </div>
-               <div class="card-profile">
-                  <div class="img1"><img src="#" alt="#"></div>
-                  <div class="img2"><img src="#" alt="#"></div>
-                  <div class="title-profile">
-                     <h2>Lorem, ipsum.</h2>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, adipisci.</p>
+               <div class="profile-card col-lg-6">
+                  <div class="profile-card-img1"><img class="img-fluid w-100" src="../images/sobre-nosotros/profile-card-img-bg.jpg" alt="imágen background arquitecto2"></div>
+                  <div class="profile-card-img2"><img src="../images/sobre-nosotros/profile-card-img2.jpg" alt="imágen portada arquitecto2"></div>
+                  <div class="profile-card-title">
+                     <h2>Ruben, Ledesma</h2>
+                     <p class="text-center">Arquitecto graduado de la Universidad Nacional de Rosario.</p>
                   </div>
-                  <div class="profile-socials">
+                  <div class="profile-card-socials">
                      <i class="bi bi-linkedin"></i>
                      <i class="bi bi-instagram"></i>
                      <i class="bi bi-facebook"></i>
@@ -96,7 +106,6 @@
             </div>
          </div>
       </div>
-      </div>
    </main>
 
    <!-- FOOTER -->
@@ -104,16 +113,16 @@
    <footer class="bg-dark text-white text-start">
       <div class="container">
          <a href="#" class="text-decoration-none">
-            <p class="footer-copyright text-white">Copyright &copy; 2023 Lorem, ipsum.</p>
+            <p class="footer-copyright text-white">Copyright &copy; 2023 | 2L - ARQ</p>
          </a>
       </div>
       <div class="footer-sociales">
          <a href="https://www.instagram.com/2l.arq/" target="_blank" class="p-1 mb-5 mx-2 text-dark opacity-75">
-            <i class="bi bi-instagram h1 footer-social"></i>
+            <i class="bi bi-instagram h2 footer-social"></i>
          </a>
 
          <a href="https://www.linkedin.com/" target="_blank" class="text-dark opacity-75">
-            <i class="bi bi-linkedin h1 footer-social"></i>
+            <i class="bi bi-linkedin h2 footer-social"></i>
          </a>
       </div>
    </footer>
@@ -126,6 +135,10 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
 </body>
 
 </html>

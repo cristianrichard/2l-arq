@@ -169,7 +169,7 @@ footer {
 }
 
 .contact-main {
-  min-height: 95.9vh;
+  min-height: 85.9vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -265,9 +265,86 @@ footer {
   transition: 0.5s;
 }
 
+/* ===== CARD RESPONSIVE MEDIA ==========*/
+@media (min-width: 992px) {
+  .contact-card-container {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-main {
+    max-height: 80vh;
+  }
+  .contact-card {
+    width: 540px;
+    padding: 2rem;
+  }
+  .contact-card-container {
+    padding: 2rem 0;
+  }
+}
+@media (max-width: 768px) {
+  .contact-card {
+    width: 380px;
+    height: 680px;
+    padding: 1.5rem;
+  }
+  .contact-card-container {
+    padding: 4rem 0;
+  }
+  .contact-card-logo {
+    margin-bottom: 24px;
+  }
+  .contact-card-form {
+    margin-top: 20px;
+  }
+  .contact-card-form button {
+    margin-top: 20px;
+  }
+}
 /* ======================== SOBRE NOSOTROS HTML ==============================*/
-.main-about-us {
-  margin-top: 120px;
+.profile-card {
+  height: 500px;
+}
+.profile-card-img1 img {
+  height: 200px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.profile-card-img2 img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  margin-top: -80px;
+}
+.profile-card-title {
+  display: flex;
+  flex-direction: column;
+}
+.profile-card-title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  margin-top: 5px;
+}
+.profile-card-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.profile-card:first-child {
+  margin-bottom: 80px;
+}
+.profile-card:last-child {
+  margin-bottom: 80px;
 }
 
 /*=============NAVBAR=============*/
@@ -296,40 +373,6 @@ footer {
 @media (max-width: 992px) {
   .navbar-ul {
     margin-top: 18px;
-  }
-}
-/* ===== CARD RESPONSIVE MEDIA ==========*/
-@media (min-width: 992px) {
-  .contact-card-container {
-    margin-bottom: 25px;
-  }
-}
-@media (max-width: 992px) {
-  .contact-card {
-    width: 540px;
-    padding: 2rem;
-  }
-  .contact-card-container {
-    padding: 2rem 0;
-  }
-}
-@media (max-width: 768px) {
-  .contact-card {
-    width: 380px;
-    height: 680px;
-    padding: 1.5rem;
-  }
-  .contact-card-container {
-    padding: 4rem 0;
-  }
-  .contact-card-logo {
-    margin-bottom: 24px;
-  }
-  .contact-card-form {
-    margin-top: 20px;
-  }
-  .contact-card-form button {
-    margin-top: 20px;
   }
 }
 /* ========== ICONOS DE INSTAGRAM Y LINKEDIN QUE APARECEN EN TODAS LAS PÁGINAS ========== */
