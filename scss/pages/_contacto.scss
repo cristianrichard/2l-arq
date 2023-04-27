@@ -13,8 +13,8 @@
    height: 740px;
    display: flex;
    flex-direction: column;
-   background: rgba(255, 255, 255, .5);
-   color: #373737;
+   background: #ffffff80;
+   color: $color-text;
    padding: 3rem;
    border-radius: 16px;
    text-align: center;
@@ -32,7 +32,7 @@
 
    &-header {
       margin-bottom: 1.5rem;
-      border-bottom: 2px solid #373737;
+      border-bottom: 2px solid $color-text;
 
       h1 {
          font-weight: bold;
@@ -68,8 +68,8 @@
 
          &>input {
             position: inherit;
-            background: rgba(22, 219, 245, 0.19);
-            color: #373737;
+            background: $color-primario;
+            color: $color-text;
             padding: 1rem 1.5rem;
             border-radius: 16px;
             width: 100%;
@@ -92,8 +92,8 @@
 
       & button {
          margin-top: 40px;
-         background: #373737;
-         color: #fff;
+         background: $color-text;
+         color: $color-white;
          padding: 1rem;
          border-radius: 16px;
          text-transform: uppercase;

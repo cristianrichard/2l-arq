@@ -6,19 +6,19 @@
 }
 
 .nav-item>a {
-   color: #fff;
+   color: $color-white;
    font-weight: 400;
 
    &:hover {
-      background-color: #fff;
-      color: rgba(33, 37, 41, 1);
+      background-color: $color-white;
+      color: rgba(0, 0, 0, .5);
       transition: 1s;
    }
 }
 
 .brand-text:hover {
-   background-color: #fff;
-   color: rgba(33, 37, 41, 1);
+   background-color: $color-white;
+   color: rgba(0, 0, 0, .5);
    transition: 1s;
 }
 
