@@ -147,9 +147,21 @@ body {
     align-items: start;
   }
 }
+@media (max-width: 992px) {
+  .proyect-container {
+    flex-direction: column;
+  }
+}
 /* ======================== SERVICIOS HTML ==============================*/
 .main-services {
   margin-top: 120px;
+}
+
+.services-section img {
+  height: 300px;
+}
+.services-section p {
+  text-align: justify;
 }
 
 @media (max-width: 768px) {

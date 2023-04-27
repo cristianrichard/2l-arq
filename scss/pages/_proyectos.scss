@@ -51,3 +51,9 @@
       align-items: start;
    }
 }
+
+@media (max-width: 992px) {
+   .proyect-container {
+      flex-direction: column;
+   }
+}
