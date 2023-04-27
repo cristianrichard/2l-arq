@@ -1,6 +1,12 @@
 /* ======================== SOBRE NOSOTROS HTML ==============================*/
+.row-sobre-nosotros {
+   margin-right: 0;
+   margin-left: 0;
+}
+
 .profile-card {
    height: 500px;
+   box-shadow: 0 0 30px rgba(0, 0, 0, .5);
 
    &-img1 {
       img {

@@ -164,6 +164,11 @@ footer {
   margin-top: 120px;
 }
 
+@media (max-width: 768px) {
+  .main-services {
+    overflow-x: hidden;
+  }
+}
 .portada-index {
   max-height: 80vh;
 }
@@ -303,8 +308,14 @@ footer {
   }
 }
 /* ======================== SOBRE NOSOTROS HTML ==============================*/
+.row-sobre-nosotros {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .profile-card {
   height: 500px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 .profile-card-img1 img {
   height: 200px;
