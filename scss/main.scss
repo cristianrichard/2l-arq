@@ -12,8 +12,9 @@
 
 // COMPONENTS //
 
+
 @import "./components/navbar";
-@import "./components/card-profile";
+@import "./components/footer";
 @import "./components/sociales";
 
 // Si importo los componentes antes que las pages, no me toma los media queries

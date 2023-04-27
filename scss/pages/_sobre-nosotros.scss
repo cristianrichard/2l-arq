@@ -59,3 +59,14 @@
       margin-bottom: 80px;
    }
 }
+
+
+//Responsive media
+
+@media (min-width: 992px) {
+   .row-sobre-nosotros {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 1rem;
+   }
+}
