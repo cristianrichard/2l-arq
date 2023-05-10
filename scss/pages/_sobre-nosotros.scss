@@ -11,8 +11,7 @@
    &-img1 {
       img {
          height: 200px;
-         border-top-left-radius: 16px;
-         border-top-right-radius: 16px;
+         object-fit: contain;
       }
    }
 
@@ -60,6 +59,11 @@
    }
 }
 
+.sobre-nosotros-socials {
+   color: $color-text;
+   font-size: 2rem;
+}
+
 
 //Responsive media
 
@@ -69,4 +73,16 @@
       flex-wrap: nowrap;
       gap: 1rem;
    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+   .sobre-nosotros-bg-img {
+     margin-top: 20px;
+   }
+ }
+
+@media (min-width:1200px) {
+   .sobre-nosotros-bg-img {
+      margin-top: 20px;
+    }
 }
