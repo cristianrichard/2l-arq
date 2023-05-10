@@ -424,6 +424,14 @@ footer {
   padding: 7px;
 }
 
+.location-button {
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+}
+
 /* ========== ICONOS DE INSTAGRAM Y LINKEDIN QUE APARECEN EN TODAS LAS PÁGINAS ========== */
 .footer-sociales {
   display: flex;
