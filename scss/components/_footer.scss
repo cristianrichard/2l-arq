@@ -3,6 +3,7 @@ footer {
    display: flex;
    justify-content: center;
    align-items: center;
+   z-index: 1;
 }
 
 .footer-copyright {
@@ -16,5 +17,101 @@ footer {
    outline: none;
    background-color: transparent;
    font-size: 1.1rem;
+   cursor: pointer;
+   transition: all .5s;
+
+   &:hover {
+      background-color: $color-white;
+      color: $color-text;
+   }
 }
 
+.modal {
+   display: none;
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 100;
+
+   &-content {
+      display: block;
+      width: 90%;
+      max-width: 60rem;
+      background-color: $color-background;
+      color: $color-text;
+      margin: 25% auto;
+      padding: 1.5rem;
+      border: 2px solid $color-text;
+      text-align: center;
+      animation: slide ease .8s;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      position: relative;
+
+      h1 {
+         font-size: 1.5rem;
+      }
+
+      span {
+         font-size: 2rem;
+         position: absolute;
+         color: $color-text;
+         right: 0;
+         cursor: pointer;
+      }
+   }
+
+   &-map {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &>iframe {
+         width: 100%;
+         border-radius: .5rem;
+         border: 1px solid $color-text;
+      }
+   }
+}
+
+@keyframes slide {
+   0% {
+      transform: translateY(-50rem);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+
+// Media query para el modal
+
+@media (min-width: 768px) {
+   .modal-content {
+      position: relative;
+      top: -10%;
+   }
+}
+
+@media (min-width: 992px) {
+   .modal-content {
+      top: -15%;
+   }
+}
+
+@media (min-width: 1200px) {
+   .modal-content {
+      top: -20%;
+   }
+}

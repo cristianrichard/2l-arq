@@ -417,6 +417,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .footer-copyright {
@@ -430,8 +431,91 @@ footer {
   outline: none;
   background-color: transparent;
   font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.location-button:hover {
+  background-color: #ffffff;
+  color: #373737;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.modal-content {
+  display: block;
+  width: 90%;
+  max-width: 60rem;
+  background-color: #e9e9e9;
+  color: #373737;
+  margin: 25% auto;
+  padding: 1.5rem;
+  border: 2px solid #373737;
+  text-align: center;
+  animation: slide ease 0.8s;
+  display: flex;
+  flex-direction: column;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.modal-header h1 {
+  font-size: 1.5rem;
+}
+.modal-header span {
+  font-size: 2rem;
+  position: absolute;
+  color: #373737;
+  right: 0;
+  cursor: pointer;
+}
+.modal-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-map > iframe {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #373737;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-50rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (min-width: 768px) {
+  .modal-content {
+    position: relative;
+    top: -10%;
+  }
+}
+@media (min-width: 992px) {
+  .modal-content {
+    top: -15%;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-content {
+    top: -20%;
+  }
+}
 /* ========== ICONOS DE INSTAGRAM Y LINKEDIN QUE APARECEN EN TODAS LAS PÁGINAS ========== */
 .footer-sociales {
   display: flex;

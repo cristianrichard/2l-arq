@@ -77,7 +77,8 @@
       <div class="row row.services g-5 p-2">
          <section class="services-section col-lg-4 p-4">
             <h2 class="mb-3 fs-5">ANTEPROYECTOS</h2>
-            <img src="../images/servicios/anteproyectos.jpg" class="w-100 services-img img-fluid mb-2" alt="Portada servicio">
+            <img src="../images/servicios/anteproyectos.jpg" class="w-100 services-img img-fluid mb-2"
+               alt="Portada servicio">
             <p class="fw-lighter"> Son los primeros bocetos y esbozos de una idea o proyecto de
                arquitectura. Incluyen una evaluación inicial de las necesidades del cliente y las restricciones del
                sitio, así como un análisis de la viabilidad y la factibilidad del proyecto.</p>
@@ -85,7 +86,8 @@
 
          <section class="services-section col-lg-4 p-4">
             <h2 class="mb-3 fs-5">PROYECTOS</h2>
-            <img src="../images/servicios/proyecto.jpg" class="w-100 services-img img-fluid mb-2" alt="Portada servicio">
+            <img src="../images/servicios/proyecto.jpg" class="w-100 services-img img-fluid mb-2"
+               alt="Portada servicio">
             <p class="fw-lighter">Los proyectos son la fase de diseño más detallada, que incluye la
                planificación del espacio, la selección de materiales y la definición de los sistemas estructurales y
                mecánicos. Los proyectos pueden incluir planos de construcción, renders 3D, modelos de maquetas y
@@ -100,8 +102,8 @@
          </section>
          <section class="services-section col-lg-4 p-4">
             <h2 class="mb-3 fs-5">DIRECCIÓN DE OBRA</h2>
-            <img src="../images/servicios/direccion-de-obra.jpg" class="w-100 services-img img-fluid mb-2" loading="lazy"
-               alt="Portada servicio">
+            <img src="../images/servicios/direccion-de-obra.jpg" class="w-100 services-img img-fluid mb-2"
+               loading="lazy" alt="Portada servicio">
             <p class="fw-lighter"> La dirección de obra implica la supervisión y el control de la
                construcción de un proyecto de arquitectura. El arquitecto debe coordinar a los contratistas y
                subcontratistas, asegurando que se cumplan los plazos y presupuestos del proyecto.</p>
@@ -116,8 +118,8 @@
          </section>
          <section class="services-section col-lg-4 p-4">
             <h2 class="mb-3 fs-5">DISEÑO DE INTERIORES</h2>
-            <img src="../images/servicios/diseño-de-interiores.jpg" class="w-100 services-img img-fluid mb-2" loading="lazy"
-               alt="Portada servicio">
+            <img src="../images/servicios/diseño-de-interiores.jpg" class="w-100 services-img img-fluid mb-2"
+               loading="lazy" alt="Portada servicio">
             <p class="fw-lighter">El diseño de interiores se enfoca en la selección y diseño de los
                elementos interiores de un espacio, como mobiliario, iluminación y acabados. El diseño de interiores
                puede estar integrado en el diseño arquitectónico de un proyecto, o puede ser un servicio independiente.
@@ -129,11 +131,27 @@
    <!-- FOOTER -->
 
    <footer class="bg-dark text-white text-start">
-      <div class="container">
+      <div class="container d-flex justify-content-between">
          <a href="#" class="text-decoration-none">
             <p class="footer-copyright text-white">Copyright &copy; 2023 | 2L - ARQ</p>
          </a>
+         <button class="location-button" id="location-button">Ubicación</button>
       </div>
+
+      <div class="modal">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h1>Visitanos!</h1>
+               <span class="close">&times;</span>
+            </div>
+            <div class="modal-map">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13399.677708289837!2d-60.9080954!3d-32.9002985!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6497bf62dba3f%3A0x2a067b5c60c73ea1!2s2L%20ARQ!5e0!3m2!1ses-419!2sar!4v1683765604466!5m2!1ses-419!2sar"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         </div>
+      </div>
+
       <div class="footer-sociales">
          <a href="https://www.instagram.com/2l.arq/" target="_blank" class="p-1 mb-5 mx-2 text-dark opacity-75">
             <i class="bi bi-instagram h2 footer-social"></i>
@@ -145,7 +163,7 @@
       </div>
    </footer>
 
-
+   <script src="../script/script.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"></script>
